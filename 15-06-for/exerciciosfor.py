@@ -46,8 +46,7 @@ print(f'o maior peso foi {menor} e o menor peso foi {maior}')"""
 #         par += num
 #     if num % 2 == 0:
 #         qpar += 1
-# print(
-#     f'A soma dos números pares é: {par}! E a quantidade de números pares inseridos são: {qpar}')
+# print(f'A soma dos números pares é: {par}! E a quantidade de números pares inseridos são: {qpar}')
 
 """#01 - Crie um programa que leia dois valores e mostre um menu na tela:
 [ 1 ] somar
@@ -57,3 +56,34 @@ print(f'o maior peso foi {menor} e o menor peso foi {maior}')"""
 [ 5 ] sair do programa
 Seu programa deverá realizar a operação solicitada em cada caso. (utilizar while
 sem break)"""
+stop = 5
+n1 = int(input('Digite um valor: '))
+n2 = int(input('Digite o segundo valor: '))
+
+while stop == 5:
+    print("""
+Digite a opção desejada:
+[ 1 ] somar
+[ 2 ] multiplicar
+[ 3 ] maior
+[ 4 ] novos números
+[ 5 ] sair do programa)""")
+    opcao = int(input('Digite a opção desejada: '))
+    if opcao == 1:
+        stop = 0
+        print(f'{n1} + {n2} = {n1 + n2}')
+    elif opcao == 2:
+        stop = 0
+        print(f'{n1} * {n2} = {n1 * n2}')
+    elif opcao == 3:
+        stop = 0
+        if n1 > n2:
+            print(n1)
+        else:
+            print(n2)
+    elif opcao == 4:
+        n1 = int(input('Digite um valor: '))
+        n2 = int(input('Digite o segundo valor: '))
+    elif opcao == 5:
+        stop = 0
+        print('Você saiu do programa! ')
