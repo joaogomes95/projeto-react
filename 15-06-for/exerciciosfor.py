@@ -56,34 +56,64 @@ print(f'o maior peso foi {menor} e o menor peso foi {maior}')"""
 [ 5 ] sair do programa
 Seu programa deverá realizar a operação solicitada em cada caso. (utilizar while
 sem break)"""
-stop = 5
-n1 = int(input('Digite um valor: '))
-n2 = int(input('Digite o segundo valor: '))
+# stop = 5
+# n1 = int(input('Digite um valor: '))
+# n2 = int(input('Digite o segundo valor: '))
 
-while stop == 5:
-    print("""
-Digite a opção desejada:
-[ 1 ] somar
-[ 2 ] multiplicar
-[ 3 ] maior
-[ 4 ] novos números
-[ 5 ] sair do programa)""")
-    opcao = int(input('Digite a opção desejada: '))
+# while stop == 5:
+#     print("""
+# Digite a opção desejada:
+# [ 1 ] somar
+# [ 2 ] multiplicar
+# [ 3 ] maior
+# [ 4 ] novos números
+# [ 5 ] sair do programa)""")
+#     opcao = int(input('Digite a opção desejada: '))
+#     if opcao == 1:
+#         stop = 0
+#         print(f'{n1} + {n2} = {n1 + n2}')
+#     elif opcao == 2:
+#         stop = 0
+#         print(f'{n1} * {n2} = {n1 * n2}')
+#     elif opcao == 3:
+#         stop = 0
+#         if n1 > n2:
+#             print(n1)
+#         else:
+#             print(n2)
+#     elif opcao == 4:
+#         n1 = int(input('Digite um valor: '))
+#         n2 = int(input('Digite o segundo valor: '))
+#     elif opcao == 5:
+#         stop = 0
+#         print('Você saiu do programa! ')
+
+# 02 - Crie um programa que leia a idade e o sexo de várias pessoas. A cada
+# pessoa cadastrada, o programa deverá perguntar se o usuário quer ou não
+# continuar. No final, mostre:
+# A) Quantas pessoas têm mais de 18 anos.
+# B) Quantos homens foram cadastrados.
+# C) Quantas mulheres têm menos de 20 anos.
+
+idade = int(input('Digite sua idade: '))
+sexo = str(input('Digite seu sexo[F/M]: ')).upper
+
+while True:
+    opcao = int(input('Digite 1 para continuar e 2 para sair: '))
     if opcao == 1:
-        stop = 0
-        print(f'{n1} + {n2} = {n1 + n2}')
-    elif opcao == 2:
-        stop = 0
-        print(f'{n1} * {n2} = {n1 * n2}')
-    elif opcao == 3:
-        stop = 0
-        if n1 > n2:
-            print(n1)
-        else:
-            print(n2)
-    elif opcao == 4:
-        n1 = int(input('Digite um valor: '))
-        n2 = int(input('Digite o segundo valor: '))
-    elif opcao == 5:
-        stop = 0
-        print('Você saiu do programa! ')
+        idade = int(input('Digite sua ideida: '))
+        sexo = str(input('Digite seu sexo: ')).upper
+    else:
+        print('Você saiu do progama!')
+    if idade > 18:
+        idade += 1
+        print(f'{idade} pessoas tem mais que 18 anos')
+    if sexo == 'M':
+        sexo = + 1
+        print(f'{sexo} Homens foram cadastrados!')
+    if sexo == 'F':
+        idade < 20
+        idade += 1
+        print(f'São {idade} mulheres com menos de 20 anos! ')
+    else:
+        break
