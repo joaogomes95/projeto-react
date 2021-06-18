@@ -30,8 +30,7 @@
 # tupla1 = a1.count(9)
 # tupla2 = a1.count(3)
 
-# print(
-#     f'O número apareceu {tupla1} vezes e o número 3 apareceu {tupla2} vezes!')
+# print(f'O número apareceu {tupla1} vezes e o número 3 apareceu {tupla2} vezes!')
 
 # 01 - Dada a lista l = [5, 7, 2, 9, 4, 1, 3], escreva um programa que imprima as seguintes informações:
 # a) tamanho da lista.
