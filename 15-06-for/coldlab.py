@@ -44,14 +44,36 @@
 # palpites.O programa vai perguntar quantos jogos serão gerados e vai sortear 6
 # números entre 1 e 60 para cada jogo, cadastrando tudo em uma lista composta
 
-from random import sample
+# from random import sample
 
-mega = []
-valor = int(input('Digite a quantidade de combinações: '))
-for c in range(valor):
+# mega = []
+# valor = int(input('Digite a quantidade de combinações: '))
+# for c in range(valor):
 
-    combinacao = sample(range(1, 60), 6)
-    mega.append(combinacao)
+#     combinacao = sample(range(1, 60), 6)
+#     mega.append(combinacao)
 
-for a in range(valor):
-    print(f'{a+1}º jogo: {mega[a]}')
+# for a in range(valor):
+#     print(f'{a+1}º jogo: {mega[a]}')
+
+# Crie uma lista composta que recebe 5 nomes e 5 idades de clientes, utilizando o for e o if,
+# verifique quais clientes são maiores de idade e quais são menores de idade e mostre na tela
+# a seguinte frase para cada um deles: 'Fulano é maior de idade' ou 'Fulana é menor de idade'
+# e  também quantos são maiores e quantos são menores de idade.
+
+# geral = list()
+# total_maior = total_menor = 0
+
+# for c in range(5):
+#     dado = list()
+#     dado.append(str(input('Digite seu nome: ')))
+#     dado.append(int(input('digite sua idade: '))
+#     geral.append(dado[:])
+
+# for p in geral:
+#     if p[1] >= 18:
+#     print(f'{p[0]} é maior de idade')
+#     total_maior += 1
+#     else
+#     print(f'{p[0]} é menor de idade')
+#     total_menor += 1
