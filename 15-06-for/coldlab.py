@@ -61,19 +61,21 @@
 # a seguinte frase para cada um deles: 'Fulano é maior de idade' ou 'Fulana é menor de idade'
 # e  também quantos são maiores e quantos são menores de idade.
 
-# geral = list()
-# total_maior = total_menor = 0
+galera = list()
+dado = list()
+totmai = totmen = 0
+for c in range(0, 5):
+    dado.append(str(input('Nome: ')))
+    dado.append(int(input('Idade: ')))
+    galera.append(dado[:])
+    dado.clear()  # Limpa a lista dados, para receber outros dados na próxima rodada
 
-# for c in range(5):
-#     dado = list()
-#     dado.append(str(input('Digite seu nome: ')))
-#     dado.append(int(input('digite sua idade: '))
-#     geral.append(dado[:])
+for p in galera:
+    if p[1] >= 18:
+        print(f'{p[0]} é maior de idade')
+        totmai += 1
+    else:
+        print(f'{p[0]} é menor de idade')
+        totmen += 1
 
-# for p in geral:
-#     if p[1] >= 18:
-#     print(f'{p[0]} é maior de idade')
-#     total_maior += 1
-#     else
-#     print(f'{p[0]} é menor de idade')
-#     total_menor += 1
+print(f'Temos {totmai} maiores e {totmen} menores de idade.')
