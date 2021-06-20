@@ -10,23 +10,76 @@
 
 from random import randint
 
+rodadas = 0
+jogada_jogador = 0
+vitoria = 0
+vitoria_computador = 0
+empate = 0
+while True:
+    # Neste bloco vamos iniciar o as solicitações de rodadas e escolha do jogador.
+    rodadas = input('Digite o número de rodadas que você deseja realizar: ')
+    print(f'Você irá jogar {rodadas} rodadas contra o computador')
+    # Neste bloco solicitamos que o jogador escolha entre as opções (PEDRA, PAPEL ou TESOURA) e vamos exibir a opção escolhida.
 
-# Neste if fiz com que os valores aleatórios gerados pelo randint fossem transformados em (PEDRA, PAPEL ou TESOURA)
-computador = randint(0, 2)
+    jogada_jogador = str(
+        input('Digite sua opção(Papel, pedra ou tesoura): ')).upper
 
-if computador == 0:
-    computador = "PEDRA"
+    if jogada_jogador == "PEDRA":
+        print(f'Você escolheu: {jogada_jogador}')
+    if jogada_jogador == "PEPEL":
+        print(f'Você escolheu: {jogada_jogador} ')
+    if jogada_jogador == "TESOURA":
+        print(f'Você escolheu: {jogada_jogador} ')
 
-elif computador == 1:
-    computador = "PAPEL"
+# Neste neste bloco fiz com que os valores aleatórios gerados pelo randint fossem transformados em (PEDRA, PAPEL ou TESOURA) e no final exibimos o que o computudor escolheu.
 
-else:
-    computador = "TESOURA"
+        computador = randint(0, 2)
 
+        if computador == 0:
+            computador = "PEDRA"
 
-# if selec == 'PEDRA':
-#     selec == 1
-# elif selec == 'PAPEL':
-#     selec == 2
-# elif selec == 'TESOURA':
-#     selec == 3
+        elif computador == 1:
+            computador = "PAPEL"
+
+        else:
+            computador = "TESOURA"
+        print(f'O computador escolheu {computador}')
+        # Aqui defini que vitoria, derrota(Será nossos pontos do computador) e empate são FALSE, e quando for adicionado TRUE iremnos adicionar os pontos.
+        vitoria = False
+        empate = False
+        vitoria_computador = False
+        if jogada_jogador == "PAPEL":
+            if computador == "PEDRA":
+                vitoria = True
+            # PAPEL
+            elif jogada_jogador == "PAPEL":
+                if computador == "PEPEL":
+                    empate = True
+
+            elif jogada_jogador == "PAPEL":
+                if computador == "TESOURA":
+                    vitoria_computador = True
+            # PEDRA
+        elif jogada_jogador == "PEDRA":
+            if computador == "TESOURA":
+                vitoria = True
+
+            elif jogada_jogador == "PEDRA":
+                if computador == "PEDRA":
+                    empate = True
+
+            elif jogada_jogador == "PEDRA":
+                if computador == "PAPEL":
+                    vitoria_computador = True
+            # TESOURA
+        elif jogada_jogador == "TESOURA":
+            if computador == "PAPEL":
+                vitoria = True
+
+            elif jogada_jogador == "TESOURA":
+                if computador == "TESOURA":
+                    empate = True
+
+            elif jogada_jogador == "TESOURA":
+                if computador == "PEDRA":
+                    vitoria_computador = True
