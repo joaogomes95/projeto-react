@@ -1,85 +1,73 @@
-# Permitir que eu decida quantas rodadas iremos fazer;
-# • Ler a minha escolha (Pedra, papel ou tesoura);
-# • Decidir de forma aleatória a decisão do computador;
-# • Mostrar quantas rodadas cada jogador ganhou;
-# • Determinar quem foi o grande campeão de acordo com a quantidade de
-# vitórias de cada um (computador e jogador);
-# • Perguntar se o Jogador quer jogar novamente, se sim inicie volte a escolha
-# de quantidade de rodadas, se não finalize o programa.
-
-
 from random import randint
 
-rodadas = 0
-jogada_jogador = 0
-vitoria = 0
-vitoria_computador = 0
+
+pjogador = 0
+pcomputador = 0
+jogada = ['Pedra', 'Papel', 'Tesoura']
 empate = 0
+
 while True:
-    # Neste bloco vamos iniciar o as solicitações de rodadas e escolha do jogador.
-    rodadas = input('Digite o número de rodadas que você deseja realizar: ')
-    print(f'Você irá jogar {rodadas} rodadas contra o computador')
-    # Neste bloco solicitamos que o jogador escolha entre as opções (PEDRA, PAPEL ou TESOURA) e vamos exibir a opção escolhida.
 
-    jogada_jogador = str(
-        input('Digite sua opção(Papel, pedra ou tesoura): ')).upper
-
-    if jogada_jogador == "PEDRA":
-        print(f'Você escolheu: {jogada_jogador}')
-    if jogada_jogador == "PEPEL":
-        print(f'Você escolheu: {jogada_jogador} ')
-    if jogada_jogador == "TESOURA":
-        print(f'Você escolheu: {jogada_jogador} ')
-
-# Neste neste bloco fiz com que os valores aleatórios gerados pelo randint fossem transformados em (PEDRA, PAPEL ou TESOURA) e no final exibimos o que o computudor escolheu.
-
+    rodadas = int(input('Digite quantas rodadas você quer jogar: '))
+    for c in range(1, rodadas+1):
         computador = randint(0, 2)
+        print('-=-=-=-=-=-=-=-=-=-=-=-=-=')
+        print("""
+        Suas opções são:
+        [0] Pedra
+        [1] Papel
+        [2] Tesoura                    
+                    """)
+        print('-=-=-=-=-=-=-=-=-=-=-=-=-=')
+        jogador = int(input('Digite a opção selecionada: '))
+        print(f'o jogador escolheu {jogada[jogador]}')
+        print(f'O computador escolheu: {jogada[computador]}')
+        if computador == 0:  # Preda
+            if jogador == 1:
+                pjogador += 1
+                print('Você ganhou')
+            elif jogador == 0:
+                empate += 1
+                print('Você empatou')
+            elif jogador == 2:
+                pcomputador += 1
+                print('Você perdeu esta rodada!')
 
-        if computador == 0:
-            computador = "PEDRA"
+        elif computador == 1:  # papel
+            if jogador == 2:
+                pjogador += 1
+                print('Você ganhou')
+            elif jogador == 1:
+                empate += 1
+                print('Você empatou')
+            elif jogador == 0:
+                pcomputador += 1
+                print('Você perdeu esta rodada!')
 
-        elif computador == 1:
-            computador = "PAPEL"
+        elif computador == 2:  # tesoura
+            if jogador == 0:
+                pjogador += 1
+                print('Você ganhou')
+            elif jogador == 2:
+                empate += 1
+                print('Você empatou')
+            elif jogador == 1:
+                pcomputador += 1
+                print('Você perdeu esta rodada!')
 
-        else:
-            computador = "TESOURA"
-        print(f'O computador escolheu {computador}')
-        # Aqui defini que vitoria, derrota(Será nossos pontos do computador) e empate são FALSE, e quando for adicionado TRUE iremnos adicionar os pontos.
-        vitoria = False
-        empate = False
-        vitoria_computador = False
-        if jogada_jogador == "PAPEL":
-            if computador == "PEDRA":
-                vitoria = True
-            # PAPEL
-            elif jogada_jogador == "PAPEL":
-                if computador == "PEPEL":
-                    empate = True
+    continuar = input('Deseja continuar? [S/N]: ').upper()
+    if continuar != "S":
+        break
 
-            elif jogada_jogador == "PAPEL":
-                if computador == "TESOURA":
-                    vitoria_computador = True
-            # PEDRA
-        elif jogada_jogador == "PEDRA":
-            if computador == "TESOURA":
-                vitoria = True
 
-            elif jogada_jogador == "PEDRA":
-                if computador == "PEDRA":
-                    empate = True
+print("Placar do Jogo:")
+print(f'Pontos do Jogador: {pjogador}')
+print(f'Pontos do Computador: {pcomputador}')
+print(f'Empates: {empate}.')
 
-            elif jogada_jogador == "PEDRA":
-                if computador == "PAPEL":
-                    vitoria_computador = True
-            # TESOURA
-        elif jogada_jogador == "TESOURA":
-            if computador == "PAPEL":
-                vitoria = True
-
-            elif jogada_jogador == "TESOURA":
-                if computador == "TESOURA":
-                    empate = True
-
-            elif jogada_jogador == "TESOURA":
-                if computador == "PEDRA":
-                    vitoria_computador = True
+if pjogador > pcomputador:
+    print("Você venceu.")
+elif pcomputador > pjogador:
+    print("Você perdeu.")
+else:
+    print("O jogo terminou em empate.")
