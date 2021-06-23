@@ -39,14 +39,26 @@
 # 1.    Crie um programa que leia nome, ano de nascimento e carteira de trabalho e cadastre-os (com idade) em um dicionário.
 # Se por acaso a CTPS for diferente de 0, o dicionário receberá também o ano de contratação e o salário.
 # Calcule e acrescente , além da idade , com quantos anos a pessoa vai se aposentar. Considere que o trabalhador deve contribuir por 35 anos para se aposentar.
+# anoatual = 2021
+# pessoa = dict()
+# pessoa['nome'] = str(input('Digite seu nome: '))
+# pessoa['anonasc'] = int(input('Digite seu ano de nascimento: '))
+# pessoa['CTPS'] = float(input('Digite o número da sua carteira de trabalho: '))
+# pessoa['idade'] = int(input('Digite sua idade: '))
 
-pessoa = dict()
-pessoa['nome'] = str(input('Digite seu nome: '))
-pessoa['anonasc'] = int(input('Digite seu ano de nascimento: '))
-pessoa['CTPS'] = float(input('Digite o número da sua carteira de trabalho: '))
-pessoa['idade'] = int(input('Digite sua idade: '))
+# if pessoa['CTPS'] != 0:
+#     pessoa['anoc'] = int(input('digite seu ano de contratação: '))
+#     pessoa['anoc'] += 35 - pessoa['anonasc']
+#     print(f'Você vai se aposentar com {pessoa["anoc"]} de idade!')
+# else:
+# print('Você ainda não iniciou sua carreira!')
 
-if pessoa['CTPS'] != 0:
-    pessoa['anoc'] = int(input('digite seu ano de contratação: '))
-    pessoa['anoc'] -= 2021 - 35
-    print(f'Você vai se aposentar com {pessoa["anoc"]} de idade!')
+# 5. DESAFIO: Crie um programa que leia nome, sexo biologico e idade de várias pessoas,
+# guardando os dados de cada pessoa em um dicionário e todos os dicionários em uma
+# lista. No final, mostre:
+# A) Quantas pessoas estão cadastradas.
+# B) A média da idade.
+# C) Uma lista com as mulheres.
+# D) Uma lista com as idades que estão acima da média.
+# OBS: O programa deve garantir que o sexo digitado seja válido, e que quando
+# perguntar ao usuário se deseja continuar a resposta seja somente sim ou não
