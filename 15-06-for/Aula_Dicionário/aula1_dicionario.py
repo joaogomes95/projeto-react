@@ -63,6 +63,14 @@
 # OBS: O programa deve garantir que o sexo digitado seja válido, e que quando
 # perguntar ao usuário se deseja continuar a resposta seja somente sim ou não
 
+
+jogador = list()
+jogada = dict()
+
+for c in range(0, 3):
+    jogada
+
+
 # 6. Desafio: Continuando o exercício 3 crie agora um boletim escolar, seu programa deve
 # receber 5 notas de 15 alunos, assim como o nome desses alunos, o programa tem que
 # calcular a média desse aluno e mostrar a situação dele, seguindo os mesmos critérios
