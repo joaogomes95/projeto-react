@@ -1,7 +1,6 @@
 
 from random import randint
 from operator import itemgetter
-
 from time import sleep
 
 vitoria_player1 = 0
@@ -11,10 +10,8 @@ vitoria_player4 = 0
 resultado = list()
 # Aqui iremos solicitar ao usuário quantas rodadas ele deseja realizar.
 rodadas = int(input('Digite quantas rodadas deseja realizar: '))
-#
 
-# print('-='*30)
-#
+# Este for servirá para que o programa faça a validação de quantas rodadas o usuário solicitou.
 for c in range(0, rodadas):
     print(f'Os valores sorteados na {c+1}º rodada foram: ')
     # Neste bloco fizemos com que os jogadores gerem resultados aleatórios utilizando o randint.
