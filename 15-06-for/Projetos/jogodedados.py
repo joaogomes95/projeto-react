@@ -2,7 +2,7 @@
 from random import randint
 from operator import itemgetter
 from time import sleep
-
+# Aqui definifimos brevemente as vitórias de cada jogador como 0, para mais abaixo acrescentar as vitórias dependendo do resultado da partida.
 vitoria_player1 = 0
 vitoria_player2 = 0
 vitoria_player3 = 0
