@@ -1,4 +1,3 @@
-
 # Projeto 04 - Simulador de votação:
 # Crie um programa que simule um sistema de votação, ele deve receber votos até
 # que o usuário diga que não tem mais ninguém para votar, esse programa precisa ter
@@ -69,7 +68,6 @@ def votacao(voto):
         3 - Terceira Via (Mais aconcelhado)
         4 - Voto em Branco (Não aconcelhado)
         5 - NULO (Não faça isso)
-
         Digite a opção desejada: '''))
         # Neste bloco iremos fazer a contagem do votos.
         if voto == 1:
