@@ -1,0 +1,27 @@
+body {
+    background-image: url('back.jpg');
+    background-repeat: no-repeat;   
+    background-size: cover; 
+}
+
+nav ul li a {    
+    display: flex;
+    color:aliceblue;
+    justify-content: center;
+    flex-wrap: wrap; 
+    font-size: 45px   
+}
+
+section#Sub div#sub{
+    display: flex;
+    color: aliceblue;
+    justify-content: center;
+    font-size: 35px;
+}
+
+section#img #trocarimg{
+    display: flex;
+    justify-content: center;    
+}
+ 
+

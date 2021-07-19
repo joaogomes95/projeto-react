@@ -1,0 +1,57 @@
+h1#t1 {
+  background-color: #CE1212;
+  color: #EEEBDD;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+nav ul li {
+  padding: 1rem;
+}
+
+nav {
+  background-color: #1b1717;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 25;
+}
+
+nav ul li a:hover {
+  color: #fa0303; 
+}
+
+section#TextoSP {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  background-color: #1b1717;
+}
+section#Texto1 div#fotohistoria {
+  display: flex;
+  justify-content: center;
+}
+
+section#TextoSP div#Texto1 p{
+  color: rgb(255, 255, 255);
+  background-color: #1b1717;
+  display: inline-block;
+  width: 55%;
+  font-size: 21px;
+  height: 600px;
+}
+
+section#TextoSP div#fotohistoria img {
+  width: 800px;  
+  padding-left: 0px;
+  margin-right: 250px;
+}
+
+
