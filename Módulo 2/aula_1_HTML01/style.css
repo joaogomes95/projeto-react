@@ -1,38 +1,39 @@
-h1#t1 {
-  background-color: #CE1212;
-  color: #EEEBDD;
+body {
+  background-color:#2C2E43;
+}
+
+h1#t1 {  
+  color: #ffffff;
 }
 
 
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: right;
+  flex-wrap: wrap;  
 }
 nav ul li {
   padding: 1rem;
 }
 
-nav {
-  background-color: #1b1717;
-}
+
 nav ul li a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 25;
+  font-size: 25px;
 }
 
 nav ul li a:hover {
-  color: #fa0303; 
+  color: #595260; 
 }
 
 section#TextoSP {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3rem;
-  background-color: #1b1717;
+  padding: 3rem;  
+  background-color:#5d5a6e;
 }
 section#Texto1 div#fotohistoria {
   display: flex;
@@ -40,18 +41,26 @@ section#Texto1 div#fotohistoria {
 }
 
 section#TextoSP div#Texto1 p{
-  color: rgb(255, 255, 255);
-  background-color: #1b1717;
-  display: inline-block;
-  width: 55%;
+  color: rgb(255, 255, 255);  
+  display: flex;
+  width: 65%;
   font-size: 21px;
-  height: 600px;
+  height: 600px; */
 }
 
 section#TextoSP div#fotohistoria img {
-  width: 800px;  
-  padding-left: 0px;
-  margin-right: 250px;
+  /* padding-left: 0px;
+  margin-right: 0px;   */
+  width: 300px;
+  height: 300px;
+}
+
+section#sobre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;  
+  background-color:#2C2E43;
 }
 
 

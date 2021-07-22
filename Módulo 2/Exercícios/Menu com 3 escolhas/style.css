@@ -1,0 +1,21 @@
+h1 {
+    background-color: crimson;
+    color: cornsilk;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+section#escolhas {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+section#escolhas div#segunda {
+    border-left: 150px;
+}

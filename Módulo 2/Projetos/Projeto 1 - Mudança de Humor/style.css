@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
 body {
     background-image: url('back.jpg');
     background-repeat: no-repeat;   
@@ -19,9 +21,25 @@ section#Sub div#sub{
     font-size: 35px;
 }
 
-section#img #trocarimg{
+section#img {
     display: flex;
-    justify-content: center;    
+    justify-content: center;  
+    align-items: center; 
+
+    
 }
  
+section#Botao  {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
 
+section#Botao button {
+    background-color: rgb(245, 255, 240);
+    border: none;
+    font-size: 22px;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 10px;
+    margin-top: 15px;
+}

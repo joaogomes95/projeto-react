@@ -1,0 +1,98 @@
+body {
+  background-color:#2C2E43;
+}
+
+h1#t1 {  
+  color: #ffffff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;  
+}
+nav ul li {
+  padding: 1rem;
+}
+
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 25px;
+}
+
+nav ul li a:hover {
+  color: #595260; 
+}
+
+section#textosobre {
+  display: flex;
+  flex-direction: center;
+  background-color:#595260;
+  margin-right: 05px;
+}
+
+section#textosobre div#texto1 p{  
+  color: #ffffff;
+  padding: 10px;
+  font-size: 25px;
+  padding: 3rem;
+}
+
+section#textosobre div#fotohistoria{
+  width: 100%;
+}
+
+section#Projetos {
+  background-color:#B2B1B9;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;  
+}
+
+.t2{  
+  display: flex;
+  color: #ffffff;
+  justify-content: center;
+  font-size: 30px;
+}
+
+section#Projetos div#pj1{
+  max-width: 100%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  padding: 5rem;
+}
+section#Projetos div#pj2{
+  max-width: 100%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  padding: 5rem;
+}
+section#Projetos div#pj3{
+  max-width: 100%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  padding: 5rem;
+}
+section#Projetos div#pj4{
+  max-width: 100%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  padding: 5rem;
+}
+section#Projetos div#pj5{
+  max-width: 100%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  padding: 5rem;
+}
+
