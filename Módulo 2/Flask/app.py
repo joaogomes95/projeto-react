@@ -10,7 +10,7 @@ def index():
     nomelista = "Lista de coisas a fazer!"
     listapronta = True
     return render_template('index.html',
-                           nomelista=nomelista, listapronta=listapronta)
+                           itens=itens, nomelista=nomelista)
 
 
 @app.route('/nova', methods=['GET', 'POST'])

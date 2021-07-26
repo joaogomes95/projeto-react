@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    
+</head>
+<body>
+    <h1 id="t1">Portifólio</h1>
+        <div class="header2">
+
+        </div>
+    <nav>
+        <ul>
+            <li> <a href="#textosobre">Sobre mim</a> </li>
+            <li> <a href="#div2">Projetos</a> </li>            
+            <li> <a href="#link">Contato</a> </li>  
+            <li> <a href="#div4">Fale comigo</a> </li>       
+        </ul>    
+    </nav>
+    <section id="textosobre">
+        <div id ="texto1">
+        <p>"Olá! Me chamo João Vitor Gomes, tenho 26 anos e moro em São Paulo/SP. 
+            Sou formado em engenharia civil e atualmente estudo desenvolvimento de software na 
+            instuição de ensino Blue Ed Tech. Meus planos para um futuro próximo é me tornar 
+            um programador atuando na área de back-end e para que isto ocorra não pouparei 
+            esforços para adquirir mais conhecimento e me tornar um profissional qualificado."</p>
+        </div>
+
+        <div id="fotohistoria">
+            <img src="../static/img/foto_minha.png">
+        </div>
+    </section>  
+
+    <h2 class="t2" id="div2">Projetos</h2>
+        <section id="Projetos">    
+                <!-- Jogo de dados -->
+            <div id="pj1">
+                <h3>Jogo de dados</h3>
+                <a href="https://github.com/joaogomes95/Blue/blob/master/15-06-for/Projetos/jogodedados.py" target="_blank"><img src="../static/img/icnprojeto.png"></a>                               
+            </div>
+            <!-- Jokenpo -->
+            <div id="pj2">
+                <h3>Jokenpô</h3>
+                <a href="https://github.com/joaogomes95/Blue/blob/master/15-06-for/Projetos/jokenpo.py" target="_blank"><img src="../static/img/icnprojeto.png"></a>
+            </div>
+            <!-- Detetive -->
+            <div id="pj3">
+                <h3>Detetive</h3>
+                <a href="https://github.com/joaogomes95/Blue/blob/master/15-06-for/Projetos/projeto_detetive.ipynb/" target="_blank"><img src="../static/img/icnprojeto.png"></a>
+            </div>
+            <!-- Urna -->
+            <div id="pj4">
+                <h3>Urna Eleitoral</h3>
+                <a href="https://github.com/joaogomes95/Blue/blob/master/15-06-for/Projetos/projetourna.py" target="_blank"><img src="../static/img/icnprojeto.png"></a>
+            </div>
+            <!-- Ficção interativa -->
+            <div id="pj5">
+                <h3>Ficção Interativa</h3>
+                <a href="https://github.com/joaogomes95/Blue/tree/master/15-06-for/Projetos/ProjetoBlue_05" target="_blank"><img src="../static/img/icnprojeto.png"></a>
+            </div>
+            
+        </section>
+    
+    <section class="formulario">
+        <h2 id="div4">Mande uma mensagem</h2>
+        
+        <div id="forms">
+            <form name="formuser" action="/send" method="POST"> 
+            <label for="nome">Nome:</label>
+            <input type="text" placeholder="Digite seu nome" id="nome" name="nome">
+    
+            <label for="email">E-mail:</label>
+            <input type="email" placeholder="Digite seu email" id="email" name="email">    
+    
+            <label for="mensagem">Mensagem:</label>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+    
+            <button type="submit" onclick="return validar" id="enviar">Enviar</button>
+    
+            </form>
+
+        </div>    
+                
+    </section>
+        
+     <section class="social">  
+
+        <!-- <h1 id="t3">Social</h1> -->
+        <div id="social2">
+            <div id="link">
+                <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-gomes-244b7592/" target="_blank"><img src="../static/img/link.png"></a>
+            </div>              
+            <div id="whatsapp">
+                <a href="https://api.whatsapp.com/send?phone=5511992217513" target="_blank"><img src="../static/img/whats.png"></a>
+            </div>
+            <div id="insta">
+                <a href="https://www.instagram.com/geladox/" target="_blank"><img src="../static/img/insta.png"></a>
+            </div>
+            <div id="github">
+                <a href="https://github.com/joaogomes95" target="_blank"><img src="../static/img/git.png"></a>
+            </div>
+        </div> 
+     </section>  
+     <footer>
+         <p>Todos os direitos reservados: João Vitor Gomes</p>
+     </footer>
+
+    <script type="text/javascript" src="../static/js/script.js"></script>
+</body>
+
+</html> 
