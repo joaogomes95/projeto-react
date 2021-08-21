@@ -16,7 +16,7 @@ Data_Publicacao date,
 Genero varchar not null,
 NumPaginas int,
 primary key (ID_Livro),
-foreign key (ID_Autor) references tbl_autor (ID_Autor)
+foreign key (ID_Autor) references tbl_Autor (ID_Autor)
 )
 
 create table tbl_Editora(
@@ -25,5 +25,12 @@ Nome_Editora varchar (50),
 primary key (ID_Editora)
 )
 
-alter table tbl_livro 
-add constraint fk_id_editora foreign key (ID_editora) references tbl_editora (ID_Editora);
+create table tbt_loja(
+ID_Loja int not null generated always as identity,
+nome_loja varchar(50) not null,
+cidade_loja varchar(50) not null,
+ID_livro int not null,
+
+foreign key (ID_Livro) references tbt_Livro(ID_Livro),
+
+)
